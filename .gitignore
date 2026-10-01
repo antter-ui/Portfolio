@@ -1,5 +1,18 @@
-*.bak
-*.old.*
+# OS & Environment
 .DS_Store
 Thumbs.db
+*.bak
+*.old.*
+*.log
+
+# Dependencies & Build artifacts
 node_modules/
+.next/
+dist/
+build/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo

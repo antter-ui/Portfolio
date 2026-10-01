@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404: Not Found — Vedant Singh</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#111312" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <style>
+    :root {
+      --bg: #0c0e0d;
+      --card-bg: rgba(22, 25, 23, 0.7);
+      --ink: #efede7;
+      --muted: #888d89;
+      --accent: #315ed4;
+      --border: rgba(255, 255, 255, 0.08);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .wordmark {
+      color: var(--ink);
+      text-decoration: none;
+      font-family: var(--sans);
+      font-weight: 800;
+      font-size: 1.5rem;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      display: block;
+    }
+    .wordmark span {
+      display: block;
+    }
+    main {
+      margin: auto;
+      max-width: 540px;
+      width: 100%;
+      text-align: center;
+      padding: 3rem 2rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+    .status-tag {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: #f59e0b;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(3.5rem, 8vw, 5.5rem);
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      line-height: 1;
+      margin-bottom: 1rem;
+      background: linear-gradient(180deg, #ffffff 0%, #a2a8a4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #ffffff;
+      color: #0c0e0d;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.75rem 1.75rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .btn:hover {
+      background: #efede7;
+      transform: translateY(-2px);
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="wordmark" aria-label="Vedant Singh Homepage">
+      <span>Vedant</span>
+      <span>Singh</span>
+    </a>
+  </header>
+
+  <main>
+    <div class="status-tag">Error // 404</div>
+    <h1>Lost in orbit</h1>
+    <p>The page or resource you are looking for does not exist in this constellation.</p>
+    <a href="index.html" class="btn">
+      <span>Return to Homepage</span>
+      <span aria-hidden="true">&rarr;</span>
+    </a>
+  </main>
+
+  <footer>
+    Vedant Singh &copy; 2026
+  </footer>
+</body>
+</html>
