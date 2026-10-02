@@ -28,6 +28,19 @@
       r.style.setProperty('--scroll-progress-x', (progress * travel / fs).toFixed(4) + 'rem');
     }
   }
+  // Inject GitHub link button when project modal opens
+  var ghLinks = {'StudyMate AI':'https://github.com/antter-ui/studymate-ai','Radio Ishq':'https://github.com/antter-ui/radio-ishq'};
+  new MutationObserver(function(){
+    var linksEl = document.querySelector('.project-dialog-links');
+    var titleEl = document.querySelector('.project-dialog-title-block h3');
+    if (!linksEl || !titleEl || linksEl.querySelector('[data-gh]')) return;
+    var url = ghLinks[titleEl.textContent.trim()];
+    if (!url) return;
+    var a = document.createElement('a');
+    a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.setAttribute('data-gh','1');
+    a.innerHTML = 'VIEW ON GITHUB <span aria-hidden="true">&#8599;</span>';
+    linksEl.appendChild(a);
+  }).observe(document.body,{childList:true,subtree:true});
 
   window.addEventListener('load', function() { setPageMarkers(); updateMarker(); });
   window.addEventListener('scroll', updateMarker, { passive: true });
