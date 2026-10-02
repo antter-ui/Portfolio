@@ -29,7 +29,7 @@
     }
   }
   // Poll every 300ms to inject GitHub link when project modal is open
-  var ghMap = {'ai-student-buddy.vercel.app':'https://github.com/antter-ui/studymate-ai','radio-ishq-umber.vercel.app':'https://github.com/antter-ui/radio-ishq'};
+  var ghMap = {'ai-student-buddy.vercel.app':'https://github.com/antter-ui/AI-Student-Buddy','radio-ishq-umber.vercel.app':'https://github.com/antter-ui/Radio-ishq'};
   setInterval(function(){
     var linksEl = document.querySelector('.project-dialog-links');
     if(!linksEl||linksEl.querySelector('[data-gh]'))return;
@@ -181,6 +181,10 @@
 }
 
 .modal-close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #efede7;
@@ -362,7 +366,7 @@
         <span id="modalMetaId">CASE STUDY 01 / 02</span>
         <span id="modalMetaStamp">ACADEMIC / AI</span>
       </div>
-      <button id="modalCloseBtn" class="modal-close-btn" type="button" aria-label="Close dialog">CLOSE Ã—</button>
+      <button id="modalCloseBtn" class="modal-close-btn" type="button" aria-label="Close dialog">CLOSE <span aria-hidden="true">&times;</span></button>
     </div>
     <div class="modal-media-visual">
       <img id="modalVisualImg" src="projects/studymate-ai.png" alt="Project preview" />
@@ -378,7 +382,7 @@
           <span id="modalLiveLabel">LAUNCH LIVE WORKSPACE</span>
           <span aria-hidden="true">&#8599;</span>
         </a>
-        <a id="modalGithubLink" class="modal-github-btn" href="https://github.com/antter-ui/studymate-ai" target="_blank" rel="noopener noreferrer">
+        <a id="modalGithubLink" class="modal-github-btn" href="https://github.com/antter-ui/AI-Student-Buddy" target="_blank" rel="noopener noreferrer">
           <span>VIEW ON GITHUB</span>
           <span aria-hidden="true">&#8599;</span>
         </a>
@@ -389,7 +393,7 @@
 
 <script id="ascii-hover-interactivity-script">
 (function() {
-  const projectsData = [{"id":"01","name":"StudyMate AI","type":"AI Academic Assistant","stamp":"ACADEMIC / AI","description":"An intelligent neural academic assistant engineered for engineering students. Features semantic PDF lecture intelligence, automated active-recall quizzes, personalized exam revision roadmaps, and an interactive 3D WebGL neural workspace.","purpose":"Synthesize complex curriculum lectures, upload lecture slides or textbooks for vector-grounded citations, practice 5-question multiple choice quizzes, and compute structured day-by-day exam schedules with real-time topic progress tracking.","asciiImage":"projects/studymate-ai-ascii.png","sourceImage":"projects/studymate-ai.png","href":"https://ai-student-buddy.vercel.app/","liveLabel":"LAUNCH LIVE WORKSPACE","github":"https://github.com/antter-ui/studymate-ai","tools":["Next.js","React.js","TypeScript","Tailwind CSS","OpenRouter AI","RAG","Vector Embeddings","PDF Processing"],"accent":"#c9c5bc","ratio":"8 / 5"},{"id":"02","name":"Radio Ishq","type":"3D Music Experience","stamp":"3D / AUDIO","description":"A cinematic 3D music experience with interactive album cards, synchronized lyrics, and immersive playback.","purpose":"Combines Web Audio API frequency analysis, interactive 3D cover flow navigation, synchronized lyric scrolling, and complete queue management to create an artistic, tactile listening atmosphere.","asciiImage":"projects/radio-ishq-ascii.png","sourceImage":"projects/radio-ishq.png","href":"https://radio-ishq-umber.vercel.app/","liveLabel":"EXPERIENCE RADIO ISHQ","github":"https://github.com/antter-ui/radio-ishq","tools":["Next.js","React.js","TypeScript","Tailwind CSS","Web Audio API","3D UI","UI/UX"],"accent":"#c9c5bc","ratio":"8 / 5"}];
+  const projectsData = [{"id":"01","name":"StudyMate AI","type":"AI Academic Assistant","stamp":"ACADEMIC / AI","description":"An intelligent neural academic assistant engineered for engineering students. Features semantic PDF lecture intelligence, automated active-recall quizzes, personalized exam revision roadmaps, and an interactive 3D WebGL neural workspace.","purpose":"Synthesize complex curriculum lectures, upload lecture slides or textbooks for vector-grounded citations, practice 5-question multiple choice quizzes, and compute structured day-by-day exam schedules with real-time topic progress tracking.","asciiImage":"projects/studymate-ai-ascii.png","sourceImage":"projects/studymate-ai.png","href":"https://ai-student-buddy.vercel.app/","liveLabel":"LAUNCH LIVE WORKSPACE","github":"https://github.com/antter-ui/AI-Student-Buddy","tools":["Next.js","React.js","TypeScript","Tailwind CSS","OpenRouter AI","RAG","Vector Embeddings","PDF Processing"],"accent":"#c9c5bc","ratio":"8 / 5"},{"id":"02","name":"Radio Ishq","type":"3D Music Experience","stamp":"3D / AUDIO","description":"A cinematic 3D music experience with interactive album cards, synchronized lyrics, and immersive playback.","purpose":"Combines Web Audio API frequency analysis, interactive 3D cover flow navigation, synchronized lyric scrolling, and complete queue management to create an artistic, tactile listening atmosphere.","asciiImage":"projects/radio-ishq-ascii.png","sourceImage":"projects/radio-ishq.png","href":"https://radio-ishq-umber.vercel.app/","liveLabel":"EXPERIENCE RADIO ISHQ","github":"https://github.com/antter-ui/Radio-ishq","tools":["Next.js","React.js","TypeScript","Tailwind CSS","Web Audio API","3D UI","UI/UX"],"accent":"#c9c5bc","ratio":"8 / 5"}];
 
   const backdrop = document.getElementById('customProjectModalBackdrop');
   const closeBtn = document.getElementById('modalCloseBtn');
