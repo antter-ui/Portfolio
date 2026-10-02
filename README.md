@@ -7,7 +7,7 @@
 
 ## 🌟 Overview
 
-This repository contains the complete portfolio for **Vedant Singh**. Built with a dark electric aesthetic, the site blends interactive paper cutouts, bespoke typography, and reactive animations into an immersive storytelling experience.
+This repository contains the complete portfolio for **Vedant Singh**. Built with a dark electric aesthetic, the site blends interactive paper cutouts, bespoke typography, reactive animations, and ASCII-to-photo hover transitions into an immersive storytelling experience.
 
 ---
 
@@ -18,7 +18,9 @@ Vedant Singh Portfolio/
 ├── index.html            # Main portfolio homepage & interactive hero stage
 ├── about.html            # Dedicated About Me page & illustrated story
 ├── 404.html              # Custom stylized 404 error page
+├── package.json          # Node scripts for local development
 ├── .gitignore            # Git ignore rules for clean repository state
+├── README.md             # Project documentation
 │
 ├── about/                # About page visual assets
 │   ├── astronaut-cutout.png  # Custom astronaut illustration
@@ -33,22 +35,11 @@ Vedant Singh Portfolio/
 │   ├── sampler.webp          # Audio sampler cutout
 │   └── watch.webp            # Watch cutout
 │
-├── projects/             # Featured project snapshots & experiment media
-│   ├── academic-resource-hub.webp
-│   ├── brutal-roast.webp
-│   ├── chrono-vault-clean.webp
-│   ├── current-portfolio-home.webp
-│   ├── eikona-ai.webp
-│   ├── grain-protection.webp
-│   ├── markdown-studio.webp
-│   ├── northlight-fashion-clean.webp
-│   ├── panelpress-home.webp
-│   ├── prompt-genius.webp
-│   ├── resonance-movies.webp
-│   ├── risklock-home-clean.webp
-│   ├── seir-abstract-painting.webp
-│   ├── verse-gemma-art.webp
-│   └── verse-live-caption.webp
+├── projects/             # Featured project snapshots & ASCII preview renders
+│   ├── studymate-ai-ascii.png # StudyMate AI ASCII preview
+│   ├── studymate-ai.png       # StudyMate AI full-color interface
+│   ├── radio-ishq-ascii.png   # Radio Ishq ASCII preview
+│   └── radio-ishq.png         # Radio Ishq full-color interface
 │
 ├── textures/             # Aesthetic background overlays & grain
 │   ├── live-grain.png
@@ -64,9 +55,22 @@ Vedant Singh Portfolio/
 ├── favicon.svg           # Vector brand favicon
 ├── favicon.ico           # Legacy browser favicon
 ├── favicon-48.png        # 48x48 icon
-├── apple-touch-icon.png  # iOS touch icon
-└── og-home.jpg           # OpenGraph social share card
+└── apple-touch-icon.png  # iOS touch icon
 ```
+
+---
+
+## 🚀 Featured Projects
+
+1. **StudyMate AI**
+   - **Type:** AI Academic Assistant
+   - **Tech:** Next.js, React.js, TypeScript, Tailwind CSS, OpenRouter AI, RAG, Vector Embeddings, PDF Processing
+   - **Live Demo:** [ai-student-buddy.vercel.app](https://ai-student-buddy.vercel.app/)
+
+2. **Radio Ishq**
+   - **Type:** 3D Music Experience
+   - **Tech:** Next.js, React.js, TypeScript, Tailwind CSS, Web Audio API, 3D UI, UI/UX
+   - **Live Demo:** [radio-ishq-umber.vercel.app](https://radio-ishq-umber.vercel.app/)
 
 ---
 
@@ -79,23 +83,28 @@ Vedant Singh Portfolio/
 
 ---
 
-## 🚀 Running Locally
+## ⚡ Running Locally
 
 You can preview the website locally using any static web server:
 
-### Option 1: Using Node / npx (Recommended)
+### Option 1: npm (Recommended)
 ```bash
-npx -y serve . -l 3000
+npm run dev
 ```
 Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Option 2: Using Python
+### Option 2: Using npx directly
+```bash
+npx -y serve . -l 3000
+```
+
+### Option 3: Using Python
 ```bash
 python -m http.server 3000
 ```
 
-### Option 3: Direct Open
-Double click `index.html` to open directly in any modern browser.
+### Option 4: Direct Open
+Double click `index.html` to open directly in any modern web browser.
 
 ---
 
@@ -109,10 +118,14 @@ The project is fully pre-rendered and ready for zero-configuration static deploy
 
 ---
 
-## 👤 Author
+## 👤 Author & Contact
 
 **Vedant Singh**  
-- Portfolio: [https://github.com/antter-ui/Portfolio](https://github.com/antter-ui/Portfolio)
+- **Email:** [vedujns6@gmail.com](mailto:vedujns6@gmail.com)
+- **GitHub:** [https://github.com/antter-ui](https://github.com/antter-ui)
+- **Instagram:** [https://www.instagram.com/ezzvedant](https://www.instagram.com/ezzvedant?stkn=N3pycXFhaTlqem81)
+- **LinkedIn:** [https://www.linkedin.com/in/vedant-singh-ui](https://www.linkedin.com/in/vedant-singh-ui)
+- **WhatsApp:** [Message on WhatsApp](https://api.whatsapp.com/send/?phone=919243612362&text&type=phone_number&app_absent=0)
 
 ---
 

@@ -1,0 +1,18 @@
+{
+  "name": "vedant-singh-portfolio",
+  "version": "1.0.0",
+  "description": "Vedant Singh — Personal Portfolio",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "creative-tech",
+    "web-development",
+    "ai",
+    "interactive-ui"
+  ],
+  "author": "Vedant Singh <vedujns6@gmail.com>",
+  "license": "MIT"
+}
