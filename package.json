@@ -14,5 +14,8 @@
     "interactive-ui"
   ],
   "author": "Vedant Singh <vedujns6@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
 }
