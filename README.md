@@ -1,7 +1,7 @@
 # Vedant Singh — Personal Portfolio
 
 > **Ideas Into Systems**  
-> An expressive, interactive portfolio website showcasing creative technology, machine learning systems, data tools, and modern web experiences.
+> An expressive, interactive portfolio website showcasing creative technology, interactive digital systems, data tools, and modern web experiences.
 
 ---
 
@@ -36,8 +36,8 @@ Vedant Singh Portfolio/
 │   └── watch.webp            # Watch cutout
 │
 ├── projects/             # Featured project snapshots & ASCII preview renders
-│   ├── studymate-ai-ascii.png # StudyMate AI ASCII preview
-│   ├── studymate-ai.png       # StudyMate AI full-color interface
+│   ├── studymate-ai-ascii.png # StudyMate ASCII preview
+│   ├── studymate-ai.png       # StudyMate full-color interface
 │   ├── radio-ishq-ascii.png   # Radio Ishq ASCII preview
 │   └── radio-ishq.png         # Radio Ishq full-color interface
 │
@@ -62,9 +62,9 @@ Vedant Singh Portfolio/
 
 ## 🚀 Featured Projects
 
-1. **StudyMate AI**
-   - **Type:** AI Academic Assistant
-   - **Tech:** Next.js, React.js, TypeScript, Tailwind CSS, OpenRouter AI, RAG, Vector Embeddings, PDF Processing
+1. **StudyMate**
+   - **Type:** Academic Learning Workspace
+   - **Tech:** Next.js, React.js, TypeScript, Tailwind CSS, Vector Search, Document Indexing, REST APIs, PDF Processing
    - **Live Demo:** [ai-student-buddy.vercel.app](https://ai-student-buddy.vercel.app/)
 
 2. **Radio Ishq**
@@ -78,7 +78,7 @@ Vedant Singh Portfolio/
 
 - **Languages:** Python, Java, JavaScript, TypeScript, HTML, CSS, SQL
 - **Frameworks & Libraries:** React, Next.js, Tailwind CSS
-- **AI & Data:** RAG / LLMs, Embeddings, PDF.js, Web Audio API
+- **Architecture & Data:** Vector Search, REST APIs, PDF.js, Web Audio API
 - **Tooling & Platform:** Git / GitHub, Vercel, Supabase
 
 ---
