@@ -267,12 +267,53 @@
 }
 
 .modal-header-meta {
-  font-family: monospace;
+  font-family: var(--mono) !important;
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   color: rgba(239, 237, 231, 0.6);
   display: flex;
-  gap: 1.2rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-case-switcher-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #efede7;
+  padding: 0.35rem 0.75rem;
+  font-family: var(--mono) !important;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.modal-case-switcher-btn:hover {
+  background: #ffffff;
+  color: #0c0e0d;
+  border-color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.2);
+}
+
+.modal-case-switcher-btn .switcher-hint {
+  font-size: 0.64rem;
+  opacity: 0.75;
+  letter-spacing: 0.08em;
+  padding-left: 0.35rem;
+  border-left: 1px solid currentColor;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.modal-case-switcher-btn:hover .switcher-hint {
+  transform: translateX(2px);
 }
 
 .modal-close-btn {
@@ -285,7 +326,8 @@
   color: #efede7;
   padding: 0.4rem 0.9rem;
   font-size: 0.72rem;
-  font-family: monospace;
+  font-family: var(--mono) !important;
+  font-weight: 700;
   letter-spacing: 0.1em;
   cursor: pointer;
   border-radius: 2px;
@@ -320,20 +362,24 @@
 }
 
 .modal-project-title {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  margin-bottom: 0.5rem;
-  color: #efede7;
+  font-family: var(--display), "Montserrat Portfolio", Montserrat, sans-serif !important;
+  font-size: clamp(2rem, 4.5vw, 3.2rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.055em !important;
+  text-transform: uppercase !important;
+  line-height: 0.95 !important;
+  margin-bottom: 0.6rem !important;
+  color: #efede7 !important;
 }
 
 .modal-project-type {
-  font-family: monospace;
-  font-size: 0.75rem;
-  color: rgba(239, 237, 231, 0.55);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 1.5rem;
+  font-family: var(--mono) !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  color: rgba(239, 237, 231, 0.6) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .modal-tags-list {
@@ -344,29 +390,32 @@
 }
 
 .modal-tag-pill {
-  font-family: monospace;
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.4rem 0.75rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 9999px;
-  color: rgba(239, 237, 231, 0.85);
+  font-family: var(--mono) !important;
+  font-size: 0.65rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.09em !important;
+  padding: 0.4rem 0.75rem !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 9999px !important;
+  color: rgba(239, 237, 231, 0.9) !important;
 }
 
 .modal-description-text {
-  font-size: 1rem;
-  line-height: 1.65;
-  color: rgba(239, 237, 231, 0.85);
-  margin-bottom: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(0.98rem, 1.06vw, 1.15rem) !important;
+  line-height: 1.6 !important;
+  color: #efede7ab !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .modal-purpose-text {
-  font-size: 0.92rem;
-  line-height: 1.6;
-  color: rgba(239, 237, 231, 0.65);
-  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(0.9rem, 0.98vw, 1.02rem) !important;
+  line-height: 1.6 !important;
+  color: #efede780 !important;
+  margin-bottom: 2rem !important;
 }
 
 .modal-action-row {
@@ -384,10 +433,10 @@
   background: #efede7;
   color: #080a09;
   text-decoration: none;
-  font-family: monospace;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-family: var(--mono) !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
   padding: 0.85rem 1.6rem;
   border-radius: 2px;
   transition: all 0.2s ease;
@@ -406,10 +455,10 @@
   background: rgba(255, 255, 255, 0.06);
   color: #efede7;
   text-decoration: none;
-  font-family: monospace;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-family: var(--mono) !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
   padding: 0.85rem 1.6rem;
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.22);
@@ -423,12 +472,6 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
-
-
-
-
-
-
 
 /* Text-only adjustment: scale text slightly so the full 2nd paragraph fits cleanly above the photo frame in original layout */
 @media (min-width: 74.001rem) {
@@ -707,7 +750,7 @@
   <div class="custom-project-modal-card">
     <div class="modal-header-bar">
       <div class="modal-header-meta">
-        <span id="modalMetaId">CASE STUDY 01 / 02</span>
+        <button type="button" class="modal-case-switcher-btn" id="modalCaseStudySwitcher" title="Click to view next case study" aria-label="Next Case Study"><span id="modalMetaId">CASE STUDY 01 / 02</span><span class="switcher-hint" aria-hidden="true">NEXT &rarr;</span></button>
         <span id="modalMetaStamp">ACADEMIC / PLATFORM</span>
       </div>
       <button id="modalCloseBtn" class="modal-close-btn" type="button" aria-label="Close dialog">CLOSE <span aria-hidden="true">&times;</span></button>
@@ -792,9 +835,15 @@
   const liveLabel = document.getElementById('modalLiveLabel');
   const githubLink = document.getElementById('modalGithubLink');
 
+  let currentProjectIdx = 0;
+
   function openProjectModal(index) {
+    currentProjectIdx = index;
     const p = projectsData[index];
     if (!p || !backdrop) return;
+
+    const modalBackdropCard = backdrop.querySelector('.custom-project-modal-card');
+    if (modalBackdropCard) modalBackdropCard.scrollTop = 0;
 
     metaId.textContent = 'CASE STUDY ' + p.id + ' / ' + String(projectsData.length).padStart(2, '0');
     metaStamp.textContent = p.stamp;
@@ -831,6 +880,17 @@
 
   if (closeBtn) {
     closeBtn.addEventListener('click', closeProjectModal);
+
+  const switcherBtn = document.getElementById('modalCaseStudySwitcher');
+  if (switcherBtn) {
+    switcherBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const nextIdx = (currentProjectIdx + 1) % projectsData.length;
+      openProjectModal(nextIdx);
+    });
+  }
+
   }
 
   if (backdrop) {
