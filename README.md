@@ -19,6 +19,7 @@ Vedant Singh Portfolio/
 ├── about.html            # Dedicated About Me page & illustrated story
 ├── 404.html              # Custom stylized 404 error page
 ├── package.json          # Node scripts for local development
+├── vedant-singh-resume.pdf # Official printable & downloadable resume PDF
 ├── .gitignore            # Git ignore rules for clean repository state
 ├── README.md             # Project documentation
 │
